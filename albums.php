@@ -292,5 +292,3 @@
 	include("bottom.php");
 ?> 
 
-
-

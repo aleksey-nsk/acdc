@@ -30,3 +30,4 @@ function album_hidden(number)
 		}
 	}
 }
+

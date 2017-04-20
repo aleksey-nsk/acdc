@@ -47,7 +47,3 @@
 	include("bottom.php");
 ?> 
 
-
-
-
-

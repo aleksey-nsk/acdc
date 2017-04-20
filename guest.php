@@ -31,6 +31,3 @@
 	include("bottom.php");
 ?> 
 
-
-
-

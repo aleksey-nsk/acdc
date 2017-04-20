@@ -42,6 +42,3 @@
 	include("bottom.php");
 ?>  
 
-
-
-
