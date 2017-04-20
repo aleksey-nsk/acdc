@@ -1,0 +1,403 @@
+body 
+{ 
+	margin: 0px; /* убираем рамку вокруг сайта */ 
+	background-color: Black;  
+} 
+
+#main 
+{
+	font-family: "Comic Sans MS"; 	
+	text-align: center; 
+}
+
+#header
+{	
+	width: 100%;
+	height: 300px;	
+	color: Black; /* цвет текста */		
+}
+
+#header #logo
+{
+	width: 400px;
+	height: 250px;
+	float: left;
+}
+
+#header #title
+{	
+	margin-left: 400px;
+	height: 170px;
+	color: Grey;
+	background-color: Black;
+	font-size: 3em;
+	font-family: algerian;
+	padding-top: 80px;
+}
+
+#header #menu
+{ 	
+	clear: both;
+	height: 50px;
+	width: 100%;
+	background-color: #8A0808; 
+}
+
+#header #menu #menu_wrapper 
+{	
+	width: 895px;
+	height: 30px;	
+	margin: auto; /* выравнивание блока по центру родительского блока div */   	
+	padding-top: 10px;
+}
+
+#header #menu #menu_wrapper .menu_button
+{	
+	width: 100px;
+	height: 30px;
+	float: left;	
+	margin-left: 5px;
+	margin-right: 5px;
+	background: LightGray; 	
+}
+
+#header #menu #menu_wrapper .menu_button a 
+{
+	text-decoration: none;
+	color: Black;
+	font-size: 15px;
+	vertical-align: middle; 
+}
+
+/* Меняем цвет кнопок и надписей при наведении курсора мышки на них: */
+#header #menu #menu_wrapper .menu_button:hover { background-color: khaki; }
+#header #menu #menu_wrapper .menu_button a:hover { color: red; }
+
+#ref
+{
+	background-color: Black;  	
+	width: 200px; /* сделали ширину фиксированной */ 	
+	height: 1000px; 		
+	float: left; /* выравнивает элемент по левому краю,
+					а все остальные элементы, вроде текста, 
+					обтекают его по правой стороне */		
+}
+
+#ref .ref_wrapper
+{ 	
+	height: 303px;	
+	padding-top: 20px;
+}
+
+#content
+{
+	/* border: 1px solid Red; */
+	background: url(../images/background.jpg); 
+	height: 1000px; 	 
+	font-size: 20px;
+	color: Khaki; 	
+	margin-left: 200px; /* так как ширина левой колонки 200px */ 
+	margin-top: 0px;
+}
+
+#content .year { font-size: 16px; }
+
+#content #albums  
+{
+	/* border: 1px solid Red; */
+	width: 380px;
+	margin-left: 20px;	
+	margin-top: 28px;
+}
+
+#content #albums .knopka 
+{
+	/* border: 1px solid White; */
+	width: 332px;
+	text-align: left;
+	padding: 2px;
+	margin: 12px;
+	background-color: #8A0808;
+	color: White;
+	font-family: "Times New Roman"; 
+	font-size: 0.8em; 	  
+}
+
+#content #albums .knopka:hover
+{
+	background-color: #b86a6a;
+	color: Black;
+}
+
+#album-1,  #album-2,  #album-3,  #album-4,  #album-5,  #album-6,  #album-7,  #album-8,
+#album-9,  #album-10, #album-11, #album-12, #album-13, #album-14, #album-15, #album-16
+{
+	/* border: 1px solid Green; */ 
+	position: absolute;
+	left: 670px;
+	top: 383px;	
+	width: 330px;
+	height: 600px;
+	color: White;
+	font-size: 0.7em;
+	font-family: "Times New Roman";
+	text-align: left;
+	visibility: hidden; /* чтобы при открытии страницы элементы были изначально невидимыми */ 
+} 
+
+#album-1  { z-index: 1;  } 
+#album-2  { z-index: 2;  }
+#album-3  { z-index: 3;  }
+#album-4  { z-index: 4;  }
+#album-5  { z-index: 5;  }
+#album-6  { z-index: 6;  }
+#album-7  { z-index: 7;  }
+#album-8  { z-index: 8;  }
+#album-9  { z-index: 9;  }
+#album-10 { z-index: 10; }
+#album-11 { z-index: 11; }
+#album-12 { z-index: 12; }
+#album-13 { z-index: 13; }
+#album-14 { z-index: 14; }
+#album-15 { z-index: 15; }
+#album-16 { z-index: 16; } 
+
+.song
+{
+	/* border: 1px solid Red; */
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+#content #track
+{
+	/* border: 1px solid Green; */ 
+	font-family: monospace;
+	font-size: 17px;
+	color: white;
+	text-align: left;
+	margin-left: 50px;	
+	width: 360px;
+	height: 890px;	
+	font-weight: bold; 
+}   
+
+#footer
+{
+	background-color: #3c3c3c; 
+	width: 100%;	
+	height: 37px;	
+	font-size: 14px;
+	padding-top: 13px; 
+	font-weight: bold;
+	color: LightGray;
+	clear: both; /* отменяет обтекание элемента одновременно
+					с правого и левого края. Это значение рекомендуется 
+					устанавливать, когда требуется снять обтекание
+					элемента, но неизвестно точно с какой стороны */   	
+}
+
+#footer a 
+{
+	color: LightGray;
+	text-decoration: underline;
+}
+
+#footer a:hover
+{
+	color: Khaki;
+}
+
+/************** Зададим стили для формы обратной связи **************/  
+
+#content #feedback_forma
+{
+	/* border: 1px solid White; */
+	width: 440px;
+	height: 460px;
+	float: left;
+	color: Khaki;
+}
+
+#content #feedback_forma form
+{
+	/* border: 1px solid Green; */ 
+	padding-top: 5px; 	
+	font-family: "Arial";
+	width: 380px;
+	text-align: left;
+	margin-left: 40px;
+}
+
+#content #feedback_forma label 
+{
+	/* border: 1px solid yellow; */
+	display: block; /* элемент показывается как блочный */ 			
+	font-size: 18px;
+	margin-top: 20px;
+	width: 360px;
+} 
+
+#content #feedback_forma input,
+#content #feedback_forma textarea
+{
+	/* border: 1px solid Red; */
+	padding: 5px; 
+	font-size: 16px;
+	width: 350px;
+	background-color: White;
+}
+
+#content #feedback_forma textarea { height: 200px; }
+
+#content #feedback_forma input[type="submit"]
+{
+	width: 150px;	
+	border: none;
+	background-color: #8A0808;
+	color: White;
+	text-transform: uppercase; /* сделать все буквы заглавными */
+}
+
+#content #feedback_message
+{
+	/* border: 1px solid Red; */ 
+	width: 220px;
+	height: 200px;
+	float: right;
+	text-align: left; 	
+	margin-right: 40px;
+	margin-top: 25px; 
+	font-size: 20px;
+	font-family: Arial;
+	letter-spacing: 2px;
+	color: Fuchsia;	
+}
+
+/******************* Стили для МЕНЮ гостевой книги ******************/
+
+#content #guest_menu 
+{
+	/* border: 1px solid Red; */ 	
+	height: 50px;
+	margin-top: 15px; 	
+	margin-right: 50px;
+	margin-left: 50px; 	
+}	
+
+#content #guest_menu #guest_menu_wrapper
+{
+	/* border: 1px solid Red; */ 
+	width: 560px;
+	height: 35px;
+	margin: auto; /* выравнивание блока по центру родительского блока div */  
+	padding-top: 12px;
+}
+
+#content #guest_menu #guest_menu_wrapper .guest_menu_button
+{
+	/* border: 1px solid Green; */
+	width: 100px;
+	height: 25px;
+	float: left;
+	margin-left: 3px;
+	margin-right: 3px;
+	background: Khaki; 
+}
+
+#content #guest_menu #guest_menu_wrapper .guest_menu_button a 
+{
+	text-decoration: none; 	
+	font-size: 15px;
+	color: red;
+	vertical-align: top; 
+}
+
+/* Меняем цвет кнопок и надписей при наведении курсора мышки на них: */
+#content #guest_menu #guest_menu_wrapper .guest_menu_button:hover { background-color: #8A0808; }
+#content #guest_menu #guest_menu_wrapper .guest_menu_button a:hover { color: white; } 
+
+/*******************************************************************************************/
+/* Напишем стили для всех страниц гостевой книги */
+
+#content #guest_forma 
+{
+	/* border: 1px solid White; */	
+	width: 440px;
+	height: 670px;
+	float: left;
+	color: Khaki;
+}
+
+#content #guest_forma form 
+{
+	/* border: 1px solid Green; */
+	padding-top: 5px; 	
+	font-family: "Arial";
+	width: 380px;
+	text-align: left;
+	margin-left: 40px;
+}
+
+#content #guest_forma label
+{
+	/* border: 1px solid Yellow; */
+	display: block; /* элемент показывается как блочный */ 			
+	font-size: 18px;
+	margin-top: 20px;
+	width: 360px;
+}
+
+#content #guest_forma input 
+{
+	/* border: 1px solid Red; */ 
+	padding: 5px; 
+	font-size: 16px;
+	width: 350px;
+	background-color: White; 	
+}
+
+#content #guest_forma input#foto 
+{
+	background-color: gray;
+}
+
+#content #guest_forma #submit_button
+{ 			
+	border: none;
+	background-color: #8A0808;
+	color: White;
+	text-transform: uppercase; /* сделать все буквы заглавными */ 	
+	font-size: 15px;
+	width: 200px;
+}
+
+#content #guest_message
+{
+	/* border: 1px solid Red; */
+	width: 220px;
+	height: 200px;
+	float: right;
+	text-align: left; 	
+	margin-right: 40px;
+	margin-top: 25px; 
+	font-size: 20px;
+	font-family: Arial;
+	letter-spacing: 2px;
+	color: Fuchsia;	
+}
+
+/*******************************************************************************************/
+/* Капча */
+
+#content #captcha
+{
+	/* border: 1px solid Red; */
+	width: 290px;
+	height: 160px;
+	margin-top: 10px;
+}
+
+/*******************************************************************************************/
+
+
